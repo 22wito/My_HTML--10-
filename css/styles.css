@@ -1,0 +1,433 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+@font-face{
+    font-family: 'fuenteBlender';
+    src:url('../Fonts/static/Inter_18pt-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+
+}
+p {
+    color: #bf9eff;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, rgb(15, 2, 24), rgb(21, 3, 53));
+    background-repeat: no-repeat;
+    
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav {
+    background: linear-gradient(to bottom, #1a0f26, #130a1c);
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #8a2be2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.2);
+    height: 50px;
+
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 5rem; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+nav a {
+    color: #bf9eff;
+    text-decoration: none;
+    position: relative;
+    padding: 0.5rem 0;
+}
+nav a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(191, 158, 255, 0.6);
+}
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #8a2be2;
+    transition: width 0.3s ease;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+nav li:first-child a::after {
+    display: none;
+}
+
+
+.home{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+   
+}
+.home:hover{
+    transform: scale(1.1);
+}
+
+
+.banner{
+    margin-top: 70px;
+    background-image: url(../images/bannerhdtwitch2.png);
+    background-size: 120%;
+    background-position-y: center;
+    padding: 5vw 0 ;
+    justify-content: center;
+    mask-image: linear-gradient(to bottom,
+    rgba(0,0,0,1),
+    rgba(0,0,0,1),
+    rgba(0,0,0,.2),
+    rgba(0,0,0,0));
+    position:relative
+}
+.titulo{    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 9vw;
+    position: relative;
+    top: -6vw;
+    text-align: center;
+    text-shadow: black 8px 8px;
+}
+.intro{
+    background: radial-gradient(circle, rgba(85, 55, 153, 0.2), rgba(10, 2, 43, 0.5));
+    box-shadow: 0px 0px 50px rgb(126, 57, 255);
+    border-radius: 20px;
+    padding: 100px;
+    margin: 10vw 10% 0 10%;
+    text-align: justify;
+    display: block;
+    justify-content: center;
+
+    
+}
+
+
+main{
+    margin-top: 10rem;
+
+}
+
+#bienvenida {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+    font-family: 'fuenteBlender';
+    font-weight: 500;
+}
+figure {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: rgba(26, 15, 38, 0.5);
+    border: 2px solid #8a2be2;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.2);
+}
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+figcaption {
+    color: #bf9eff;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+#rrss h2{
+
+    text-align: center;
+    font-family: 'fuenteBlender';
+    font-weight: 500;
+}
+#rrss ul{
+    list-style: none;
+    margin-top:5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#rrss img{
+    width: 40px;
+    transition: transform 0.3s, filter 0.3s;
+
+}
+#rrss img:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px #9745e4);
+}
+
+#rrss aside{
+    font-family: 'fuenteBlender';
+    text-align:center;
+}
+section{
+
+    margin-bottom: 70px
+}
+iframe{
+    width: 100%;
+    
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+/* Contact: */
+.input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+    transition:  background-color 0.2s;
+}
+.input:focus{
+    color: white;
+    background-color: #1d0a6173;
+    outline: none;
+}
+
+input:hover{
+    background-color: #1d0a6173;
+    box-shadow: 0 2 5 white;
+}
+
+.button{
+    width: 100px;
+    padding: 10px;
+    margin-top: 5pc;
+    margin-left: 20px;
+    background-color: #36156d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.formulario{
+
+    box-shadow: 0px 0px 50px rgb(126, 57, 255);
+    background: radial-gradient(circle, rgba(85, 55, 153, 0.3), rgba(10, 2, 43, 0.486));
+    margin: 7rem 20%;
+    max-width: 800px;
+    padding: 10px 8rem 12rem 8rem;
+    border-radius: 20px;
+}
+
+.formulario>h2{
+    font-family: 'fuenteBlender';
+    font-weight: 500;
+    text-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+    font-size: 3rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #bf9eff;
+    font-size: 1.1rem;
+}
+
+.caja{
+    width: 50%;
+    float: left;
+}
+footer {
+    background: linear-gradient(to bottom, #2a1b3d, #1a0f26);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 2px solid #8a2be2;
+    box-shadow: 0 -4px 15px rgba(138, 43, 226, 0.2);
+    font-family: Arial, sans-serif;
+    margin-top: 2rem;
+}
+footer a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(191, 158, 255, 0.6);
+}
+
+
+
+/* Tabla proyectos */
+
+.tabla{
+
+    max-width: 1200px;
+    margin: 10rem auto;
+    overflow-x: auto;
+    background: rgba(26, 15, 38, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.2);
+}
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th, td {
+    padding: 1.5rem;
+    text-align: center;
+    color: #bf9eff;
+    border-bottom: 1px solid rgba(138, 43, 226, 0.3);
+}
+
+th {
+    background: rgba(138, 43, 226, 0.2);
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+
+}
+tr{
+    transition: background-color 0.3s;
+}
+tr:hover {
+    background: rgba(138, 43, 226, 0.2);
+}
+
+td video {
+    
+    max-height: 300px;
+    width: max-content;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #8a2be2;
+    background-color: rgba(26, 15, 38, 0.8);
+}
+
+td img {
+    max-height: 300px;
+    width: fit-content;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #8a2be2;
+}
+
+
+.impar{
+    background: rgba(138, 43, 226, 0.1);
+}
+
+
+/* Find us */
+
+.mapa{
+    margin: 1.5pc 10% 4pc 10%;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px rgb(126, 57, 255);
+    transition: 0.3s box-shadow;
+
+}
+.mapa:hover{
+
+    box-shadow: 0px 0px 50px rgb(162, 112, 255);
+}
+#ven h2{
+    text-align: center;
+    margin-top: 8pc;
+    font-family: 'fuenteBlender';
+    font-weight: 500;
+    text-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+    font-size: 2.5rem;
+}
+#calle{
+
+    margin-left: 10%;
+    font-size: 80%;
+}
+
+/* FAQ */
+
+#faq {
+    margin: 5rem auto;
+    max-width: 800px;
+    padding: 2rem;
+    background: radial-gradient(circle, rgba(85, 55, 153, 0.2), rgba(10, 2, 43, 0.5));
+    border-radius: 15px;
+    box-shadow: 0px 0px 50px rgb(126, 57, 255);
+    text-align: center;
+}
+
+#faq h1 {
+    font-family: 'fuenteBlender';
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+    margin-bottom: 2rem;
+}
+
+.Respuesta {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background: radial-gradient(circle, rgba(25, 12, 56, 0.3), rgba(5, 1, 20, 0.486));
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+}
+
+.Respuesta h2 {
+    font-family: 'fuenteBlender';
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 8px rgba(191, 158, 255, 0.4);
+}
+
+.Respuesta p {
+    color: #bf9eff;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    text-align: justify;
+}
