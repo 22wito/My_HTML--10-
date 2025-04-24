@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
     <channel>
+        <title>Titulo del canal</title>
+        <link>https://witovfx.infinityfreeapp.com</link>
+        <description>Esto es una descripción</description>
+        <language>es</language>
         <item>
-            <title>Titulo del canal</title>
-            <link></link>
-            <description></description>
-            <language></language>
+            <title>Titulo del item</title>
+            <description>Esto es la descripción del item</description>
+            <guid isPermaLink = "false">2</guid>
         </item>
     </channel>
 </rss>
